@@ -28,7 +28,7 @@ public class boj1504 {
 		StringTokenizer st = new StringTokenizer(br.readLine());
 		int N = Integer.parseInt(st.nextToken());
 		int E = Integer.parseInt(st.nextToken());
-		INF = Integer.MAX_VALUE;
+		INF = 200_000_000;
 		graph = new ArrayList<>();
 		for (int i=0; i<N+1; i++) {
 			graph.add(new ArrayList<>());
@@ -44,14 +44,22 @@ public class boj1504 {
 		st = new StringTokenizer(br.readLine());
 		int u = Integer.parseInt(st.nextToken());
 		int v = Integer.parseInt(st.nextToken());
-		int total = 0;
-		total += dijkstra(1, u, N);
-		total += dijkstra(u, v, N);
-		total += dijkstra(v, N, N);
-		System.out.print(total);
+		int[] start = dijkstra(1, N);
+		int[] mid1 = dijkstra(u, N);
+		int[] mid2 = dijkstra(v, N);
+		int rlt = Math.min(start[u]+mid1[v]+mid2[N], start[v]+mid2[u]+mid1[N]);
+		if (rlt >= INF) {
+			System.out.print(-1);
+		}
+		else {
+			System.out.print(rlt);
+		}
 	}
-	public static int dijkstra(int start, int end, int N) {
+	public static int[] dijkstra(int start, int N) {
 		int[] distances =new int[N+1];
+		for (int i=0; i<N+1; i++) {
+			distances[i] = INF;
+		}
 		PriorityQueue<Node> que = new PriorityQueue<>();
 		que.add(new Node(start,0));
 		distances[start] = 0;
@@ -65,6 +73,6 @@ public class boj1504 {
 				}
 			}
 		}
-		return distances[end];
+		return distances;
 	}
 }

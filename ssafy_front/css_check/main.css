@@ -1,0 +1,62 @@
+.content {
+  height: 500px;
+  width: 600px;
+}
+
+.header, .footer {
+  height: 80px;
+  background-color: #f88f0f;
+}
+
+.flexbox {
+  display: flex;
+  height: 340px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 9;
+}
+
+.side {
+  flex-grow: 1;
+  background-color: rgb(255, 229, 193);
+}
+
+.main {
+  background-color: #3dd8d0;
+  flex-grow: 9;
+}
+
+.article1 {
+  background-color: #98e491;
+  flex-grow: 1;
+}
+
+.article2 {
+  background-color: #c49fee;
+  flex-grow: 1;
+}
+
+.article3 {
+  background-color: #dc7676;
+  flex-grow: 1;
+}
+
+.articles {
+  display: flex;
+  flex-grow: 1;
+}
+
+.fixed {
+  position: fixed;
+  background-color: blue;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  text-align: center;
+  right: 50px;
+  bottom: 100px;
+}
+

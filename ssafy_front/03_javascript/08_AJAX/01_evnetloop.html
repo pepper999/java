@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>이벤트루프</title>
+  </head>
+  <body>
+    <script>
+      console.log("Hi");
+      //   setTimeout(function () {
+      //     console.log("대기끝");
+      //   }, 3000);
+      setTimeout(function () {
+        console.log("대기끝");
+      }, 0);
+      console.log("Bye");
+
+      setInterval(function () {
+        let bgColor = document.body.style.background;
+        if (bgColor == "red") document.body.style.background = "yellow";
+        else document.body.style.background = "red";
+      }, 1000);
+    </script>
+  </body>
+</html>

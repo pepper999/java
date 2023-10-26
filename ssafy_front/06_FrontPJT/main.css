@@ -1,0 +1,58 @@
+.navbar-brand {
+    color: purple;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-title {
+    width: 80%;
+}
+
+.search-review {
+    margin-right: 5;
+}
+
+.video-title {
+    text-align: left;
+    margin-left: 10%;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.input-group {
+    text-align: center;
+}
+
+.most-view {
+    text-align: center;
+}
+
+
+.input-group-icon {
+    color: black;
+}
+
+.review-form {
+    width: 30%;
+}
+
+.review-list {
+    width: 80%;
+}
+
+.review-content {
+    text-align: center;
+}
+
+.review-input-content {
+    height: 100px;
+}
+
+.review-regist-title {
+    text-align: center;
+}
+

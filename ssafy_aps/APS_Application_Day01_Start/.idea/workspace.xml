@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d1663a60-1d6b-4018-a4e0-365d1b1ab6ad" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APS_Application_Day01_Start/Start_01_비트연산자.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../APS_Application_Day02_PowerSet_Combination/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../APS_Application_Day02_PowerSet_Combination/out/production/APS_Application_Day02_PowerSet_Combination/부분집합_01.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../APS_Application_Day02_PowerSet_Combination/out/production/APS_Application_Day02_PowerSet_Combination/부분집합_02.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../APS_Application_Day02_PowerSet_Combination/out/production/APS_Application_Day02_PowerSet_Combination/부분집합_03.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../APS_Application_Day02_PowerSet_Combination/out/production/APS_Application_Day02_PowerSet_Combination/조합_01.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../APS_Application_Day02_PowerSet_Combination/out/production/APS_Application_Day02_PowerSet_Combination/조합_02.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../APS_Application_Day03_DivisionConquer/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../APS_Application_Day04_backTracking/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../APS_Application_Day04_backTracking/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../APS_Application_Day05_Algorithm/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../APS_Application_Day05_Algorithm/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ssafy_spring/Servers/Tomcat v9.0 Server at localhost-config/server.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ssafy_spring/Servers/Tomcat v9.0 Server at localhost-config/server.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="2WeGmi3B10SZaVr2emawqS8S1PU" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d1663a60-1d6b-4018-a4e0-365d1b1ab6ad" name="Changes" comment="" />
+      <created>1697085794506</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1697085794506</updated>
+    </task>
+    <servers />
+  </component>
+</project>

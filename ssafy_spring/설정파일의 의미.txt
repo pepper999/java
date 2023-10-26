@@ -1,0 +1,5 @@
+pom : maven 프로젝트 설정
+web : web 어플리케이션 설정
+servlet-context : 각각의 디스패쳐서블릿 설정
+root-context : 모든 디스패쳐서블릿 설정
+

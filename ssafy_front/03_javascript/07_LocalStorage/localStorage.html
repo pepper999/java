@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>로컬스토리지 실습</title>
+  </head>
+  <body>
+    <h1>로컬스토리지</h1>
+    <input type="text" id="input" placeholder="내용입력해보자." />
+    <button id="create">등록</button>
+    <button id="read">조회</button>
+    <button id="delete">삭제</button>
+    <hr />
+    <h2>내용</h2>
+    <div id="save">
+      <!-- 해당 영역에 데이터가 작성이 되겠다. -->
+    </div>
+    <script>
+      window.addEventListener("load", function () {
+        let data = localStorage.getItem("data");
+        if (data != null) {
+          document.querySelector("#save").innerText = JSON.parse(data);
+        }
+      });
+    </script>
+
+    <script>
+      //현재 하나의 데이터만 자꾸 가지고 처리한다.
+
+      //등록 이벤트
+      let createBtn = document.querySelector("#create");
+      createBtn.addEventListener("click", function () {
+        // let inputData = document.querySelector("#input").value;
+        let inputTag = document.querySelector("#input");
+        console.log(inputTag.value);
+        console.log(typeof inputTag.value); //해당 메서드를 통해 타입 확인가넝
+        //데이터를 저장하기 위해서 localStorage를 사용하자
+        //현재는 input데이터가 string이라서 그냥 냅다 넣었다.!!!!!
+
+        //객체를 문자열로 만들고 싶어 ㅠ
+        let jsonData = JSON.stringify(inputTag.value);
+
+        //키와 벨류는 문자열로 넣어줘잉
+        localStorage.setItem("data", jsonData);
+
+        inputTag.value = "";
+      });
+
+      //조회 이벤트 처리
+      document.querySelector("#read").addEventListener("click", function () {
+        let saveTag = document.querySelector("#save");
+
+        //어떤 데이터를 가져와 넣을 것인가.
+        //찾고자하는 key 가 없으면 null이 반환된다.
+        let jsonData = localStorage.getItem("data");
+        // console.log(jsonData);
+        if (jsonData != null) {
+          let data = JSON.parse(jsonData);
+          saveTag.innerText = data;
+        }
+      });
+
+      //삭제 이벤트
+      document.querySelector("#delete").addEventListener("click", function () {
+        localStorage.removeItem("data");
+        document.querySelector("#save").innerText = "";
+      });
+    </script>
+  </body>
+</html>

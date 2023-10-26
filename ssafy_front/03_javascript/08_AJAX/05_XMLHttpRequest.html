@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>XMLHttpRequest실습</title>
+  </head>
+  <body>
+    <!-- https://dog.ceo/api/breeds/image/random 한번해보기 ㅎ -->
+    <h2>서버에 요청을 보내고 JSON 데이터를 받아 화면에 출력하자</h2>
+    <div id="view"></div>
+    <button id="submit">요청</button>
+
+    <script>
+      let xhr;
+      //클라이언트에서 요청이 발생한다.
+      document.querySelector("#submit").addEventListener("click", function () {
+        //xhr 객체를 생성한다.
+        xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = responseMsg;
+        //xhr 객체 초기화 (URL 입력, 메소드 방식 설정....)
+        //마지막 true의 의미는 비동기방식의 여부
+        xhr.open("GET", "./data/member.json", true);
+        //요청 보내기
+        xhr.send();
+      });
+
+      //AJXA 요청에 대한 응답이 왔을때 사용할 콜백함수
+      function responseMsg() {
+        //서버의 응답이 끝났을 때
+        if (xhr.readyState == 4) {
+          //서버에서 오류없이 정상적으로 처리가 되었을때
+          if (xhr.status == 200) {
+            let studentList = JSON.parse(xhr.response);
+            console.log(studentList);
+            //배열이 넘어왔으니 요소를 반복문을 돌면서 화면에 추가하면 되겠다.
+          } else {
+            console.log("정상적으로 데이터를 받지 못했다.");
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

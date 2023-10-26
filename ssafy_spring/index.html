@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>연습용</title>
+  </head>
+  <body>
+    <button id="btn">게시글 가져와</button>
+    <script>
+      document.querySelector("#btn").addEventListener("click", function () {
+        fetch("http://localhost:8080/mvc/api/board")
+          .then((response) => response.text())
+          .then((text) => console.log(text));
+      });
+    </script>
+  </body>
+</html>
