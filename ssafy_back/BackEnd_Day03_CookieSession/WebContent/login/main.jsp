@@ -8,21 +8,17 @@
 </head>
 <body>
 	<%
-		if(session.getAttribute("loginUser") == null){
-			response.sendRedirect("loginForm.jsp");
-		}else{
-	%>
-		<%=session.getAttribute("loginUser") %>님 반갑습니다.
-	<%
+		if (session.getAttribute("loginUser")==null) {
+			response.sendRedirect("loginFrom.jsp");
+		}
+		else {
+			%><%=session.getAttribute("loginUser") %>님 반갑니다.
+			<%
 		}
 	%>
-	
-	<!-- 로그아웃 -->
 	<form action="logout.jsp" method="POST">
 		<button>로그아웃</button>
 	</form>
-	
 	<h2>메인페이지</h2>
-	<!-- 여러기능들이 있다. -->
 </body>
 </html>

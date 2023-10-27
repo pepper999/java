@@ -21,17 +21,10 @@ public class MakeCookieServlet extends HttpServlet {
 		String key = request.getParameter("key");
 		String value = request.getParameter("value");
 		
-//		System.out.println(key); //잘넘어온다.
-		
-		//쿠키를 생성하자.
 		Cookie cookie = new Cookie(key, value);
-		
-		response.addCookie(cookie);
-		
 		cookie.setMaxAge(10);
-		
-		
-		
+		response.addCookie(cookie);
+		response.sendRedirect("01_Cookie.jsp");
 	}
 
 }
