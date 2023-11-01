@@ -5,6 +5,7 @@ public class Programmer {
 	private Computer computer;
 	
 	public Programmer() {
+		
 	}
 	
 	//생성자를 통해서 넣어주겠다. 

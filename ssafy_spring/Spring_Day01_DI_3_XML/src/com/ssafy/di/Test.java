@@ -9,7 +9,6 @@ public class Test {
 		ApplicationContext context = new GenericXmlApplicationContext("applicationContext.xml");
 		
 		Programmer p = (Programmer)context.getBean("programmer");
-		
 		p.coding();
 		
 	}

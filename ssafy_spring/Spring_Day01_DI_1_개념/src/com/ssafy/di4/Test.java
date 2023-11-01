@@ -7,19 +7,14 @@ public class Test {
 		Scanner sc = new Scanner(System.in);
 		
 		Programmer p = new Programmer();
+		p.setComputer(ComputerFactory.getComputer("L"));
 		
-//		p.setComputer(ComputerFactory.getComputer("D"));
-//		p.coding();
-//		p.setComputer(ComputerFactory.getComputer("L"));
-//		p.coding();
-		
+		p.coding();
 		
 		while(true) {
 			p.setComputer(ComputerFactory.getComputer(sc.next()));
 			p.coding();
-			
 		}
-		
 	}
 	
 }
